@@ -128,7 +128,7 @@ services:
 
 ### Update Docker-Compose
 1. Run `docker-compose down`
-2. Run `docker-compose build`
+2. Run `docker-compose build --pull`
 3. Run `docker-compose up -d`
 4. It should be running with the newest version now.
 

@@ -109,12 +109,6 @@ converter automatically.
 The bot goes to sleep when it detects that there are only a few pixels left to be placed, only refreshing every 120s (
 till it detects it should wake up again).
 
-Source the environment (for bash):
-
-```
-source .venv/bin/activate
-```
-
 ## Docker-Compose
 
 ```yml
@@ -129,10 +123,16 @@ services:
 
 1. Add above as docker-compose.yml
 2. Add `config.json` to the same folder
-3. Run `docker-compose up -d
+3. Run `docker-compose up -d`
 4. Profit.
 
-Source the environment (for bash):
+### Update Docker-Compose
+1. Run `docker-compose down`
+2. Run `docker-compose build`
+3. Run `docker-compose up -d`
+4. It should be running with the newest version now.
+
+## Source the environment (for bash):
 
 ```
 source .venv/bin/activate
